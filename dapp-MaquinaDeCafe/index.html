@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RIFA</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="bg-light">
+    <div class="container">
+      <div class="py-5 text-center">
+        <h2>Cafeteria do Richard</h2>
+        <p class="lead">
+          Avaliação 3 unidade Blockchain e suas aplicações
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md order-md mb">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Cafés</span>
+            <span class="badge badge-secondary badge-pill" id="preco"
+              >Preço do Café: <R1>5,00</R1> /ou 0.0008 Ether </span
+            >
+          </h4>
+          <form class="card p-2">
+            <ol>
+              <li>Café com leite</li>
+              <li>Expresso</li>
+              <li>Cappuccino</li>
+              <li>Chocolate quente</li>
+            </ol>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                id="quantidade"
+                placeholder="Quantidade"
+              />
+              <div class="input-group-append">
+                <button type="button" id="btnComprar" class="btn btn-secondary">
+                  Comprar Café
+                </button>
+              </div>
+            </div>
+          </form>
+          <br />
+          <button
+            type="button"
+            id="btnSortear"
+            class="btn btn-danger btn-lg btn-block"
+          >
+            Comprar Café
+          </button>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <table class="table">
+          <thead>
+            <tr>
+              <th style="text-align: center;" scope="col" colspan="3">COMPRAS DE CAFÉ</th>
+            </tr>
+            <tr>
+                <th class="small text-center" scope="col">Endereço</th>
+                <th class="small text-center" scope="col">Quantidade</th>
+                <th class="small text-center" scope="col">Transação</th>
+              </tr>
+          </thead>
+          <tbody id="events" class="small text-center">
+          </tbody>
+        </table>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">BLOCKCHAIN E APLICAÇÕES DESCENTRALIZADAS -IMD - IMD0293</p>
+        <p class="mb-1">DOCENTE: DANILO CURVELO DE SOUZA</p>
+        <p class="mb-1">DISCENTE: RICHARD ROBERT DE SOUZA CABRAL</p>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0/web3.min.js"></script>
+    <script src="js/abi.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
